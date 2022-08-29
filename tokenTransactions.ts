@@ -46,7 +46,7 @@ const API = "https://api.elrond.com";
           var data = "0";
         }
       }
-      const saved = timestamp;
+      const saved = tx;
       if(saved !== old) {
         old = saved;
         if (data != "0"){
