@@ -9,7 +9,7 @@ const API = "https://api.elrond.com";
     const url = `${API}/transactions?from=0&size=1&token=${tokenIdentifier}`;
     try {
       const response = await axios.get(url);
-      const timestamp = response.data[0].txHash;
+      const tx = response.data[0].txHash;
       const name = response.data[0].action.name;
 
       if (name == "transfer"){
